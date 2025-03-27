@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Example</title>
+<style>
+  #myParagraph {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+
+<p id="myParagraph">This is a paragraph.</p>
+<button id="myButton">Change Color</button>
+
+<script>
+  const paragraph = document.getElementById("myParagraph");
+  const button = document.getElementById("myButton");
+
+  button.addEventListener("click", function() {
+    // Change color of the paragraph to red
+    paragraph.style.color = "red";
+  });
+</script>
+
+</body>
+</html>
